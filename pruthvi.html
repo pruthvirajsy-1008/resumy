@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Your Name</title>
+  <style>
+    :root{--accent:#0b76ef;--muted:#65748b;--bg:#f6f8fb;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#12202b; margin:0; padding:32px}
+    .container{max-width:900px; margin:0 auto}
+    .card{background:var(--card); border-radius:14px; box-shadow:0 6px 24px rgba(12,20,32,0.08); overflow:hidden; display:flex; gap:24px}
+    .sidebar{width:280px; padding:28px; background:linear-gradient(180deg, #fff 0%, #f9fbff 100%)}
+    .photo{width:120px; height:120px; border-radius:12px; overflow:hidden; margin:0 auto 18px; border:4px solid #fff; box-shadow:0 6px 18px rgba(11,118,239,0.12)}
+    .photo img{width:100%; height:100%; object-fit:cover; display:block}
+    h1{font-size:22px; margin:6px 0 2px; text-align:center}
+    p.title{margin:0; text-align:center; color:var(--muted); font-size:13px}
+    .contact{margin-top:18px; font-size:14px}
+    .contact div{display:flex; gap:8px; align-items:flex-start; color:var(--muted); margin:10px 0}
+    .content{flex:1; padding:28px}
+    .section{margin-bottom:18px}
+    .section h2{font-size:15px; margin:0 0 10px; color:#0b2b3b}
+    .summary{background:#f3f7ff; padding:12px 14px; border-radius:8px; color:#12202b}
+    .job{margin-bottom:12px}
+    .job h3{margin:0; font-size:14px}
+    .job .meta{font-size:13px; color:var(--muted); margin-bottom:6px}
+    ul.skills{display:flex; gap:8px; flex-wrap:wrap; list-style:none; padding:0; margin:0}
+    ul.skills li{background:#eef6ff; padding:6px 10px; border-radius:20px; font-size:13px; color:#0b4aa0}
+    .education .edu-item{margin-bottom:10px}
+    .download{display:inline-block; margin-top:14px; padding:8px 12px; background:var(--accent); color:#fff; border-radius:8px; text-decoration:none}
+    @media (max-width:720px){
+      .card{flex-direction:column}
+      .sidebar{width:auto}
+      .photo{margin:0 0 12px}
+      body{padding:14px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <aside class="sidebar">
+        <div class="photo">
+          <!-- Using the uploaded image file -->
+          <img class="profile-pic" src="image.jpg" alt="Profile photo" />
+        </div>
+
+        <h1 id="name">Pruthviraj Sukumar Yalagoudanavar</h1>
+        <p class="title" id="role">Desired Role — e.g. Frontend Developer</p>
+
+        <div class="contact">
+          <div>📍 <span id="location">Kesti, Hukkeri, Belagavi</span></span></div>
+          <div>✉ <span id="email">pruthvirajsy438@gmail.com</span></span></div>
+          <div>📞 <span id="phone">7204465931</span></span></div>
+          <div>🔗 <span id="website">yourwebsite.com</span></div>
+        </div>
+
+        <a class="download" href="#" onclick="window.print();return false">Print / Save PDF</a>
+
+        <hr style="margin:18px 0; border:none; border-top:1px solid #eef3fb" />
+
+        <h3 style="font-size:13px; color:var(--muted); margin:0 0 8px">Skills</h3>
+        <ul class="skills">
+          <li>Java</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <h3 style="font-size:13px; color:var(--muted); margin:16px 0 8px">Languages</h3>
+        <div style="color:var(--muted); font-size:14px">English (Professional), Hindi (Native)</div>
+
+      </aside>
+
+      <main class="content">
+        <section class="section">
+          <h2>Professional Summary</h2>
+          <div class="summary" id="summary">I am Pruthviraj Sukumar Yalagoudanavar. I have strong knowledge in Java, C, C++, and Python, with a passion for building efficient and clean software solutions. I am eager to apply and expand my skills in real‑world development environments.</div>
+        </section>
+
+        <section class="section">
+          <h2>Experience</h2>
+
+          <div class="job">
+            <h3>Frontend Developer — <span class="company">Company Name</span></h3>
+            <div class="meta">Jan 2023 — Present · City, Country</div>
+            <ul>
+              <li>Built and maintained responsive UI components using React and Tailwind CSS.</li>
+              <li>Improved performance by optimizing images and code-splitting, reducing load time by 30%.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <h3>Web Developer Intern — <span class="company">Another Company</span></h3>
+            <div class="meta">Jun 2022 — Dec 2022 · City, Country</div>
+            <ul>
+              <li>Implemented accessible form components and integrated REST APIs.</li>
+              <li>Collaborated with designers to iterate on UI/UX and delivered polished features.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Education</h2>
+          <div class="education">
+            <div class="edu-item">
+              <strong>B.Sc. in Computer Science</strong>
+              <div class="meta">University Name — 2019 — 2022</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Projects</h2>
+          <div style="margin-bottom:10px">
+            <strong>Project One</strong> — Short description. <em>Technologies:</em> React, Node.js
+          </div>
+          <div>
+            <strong>Project Two</strong> — Short description. <em>Technologies:</em> HTML, CSS, JavaScript
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Certifications & Awards</h2>
+          <ul>
+            <li>Certification A — Issuer (2023)</li>
+            <li>Award B — Description (2022)</li>
+          </ul>
+        </section>
+
+        <footer style="color:var(--muted); font-size:13px; margin-top:18px">Last updated: <span id="updated">[Update date]</span></footer>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    // Quick script: replace placeholder text with localStorage values (optional)
+    // If you want to prefill the resume, run in console or modify the DOM directly.
+  </script>
+</body>
+
+</html>
